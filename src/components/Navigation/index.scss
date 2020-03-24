@@ -1,0 +1,26 @@
+@import "../../styles/mixins";
+
+.nav {
+  width: 100%;
+  font-size: $small;
+  @include uppercare;
+
+  &_list {
+    padding: 0;
+    margin: 1rem 0 2rem 0;
+
+    &-item,
+    &-item--active {
+    display: inline-block;
+    color: $light-gray;
+    margin: 0 1rem 0 0;
+    cursor: pointer;
+
+      &--active {
+        color: $semi-gray;
+        font-weight: $bold;
+        border-bottom: 3px solid $semi-gray;
+      }
+    }
+  }
+}

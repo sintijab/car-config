@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Cars</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(res => {
+          console.log('SW registered: ', res);
+        }).catch(err => {
+          console.log('SW registration failed: ', err);
+        });
+        });
+      }
+    </script>
+</body>
+</html>

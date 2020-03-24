@@ -1,0 +1,13 @@
+// font-size
+$small: 12pt;
+$semi-regular: 14pt;
+$regular: 16pt;
+$semi-large: 21pt;
+
+// font-weight
+$bold: 600;
+
+//text-transform
+@mixin uppercare {
+  text-transform: uppercase;
+}

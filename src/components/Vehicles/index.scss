@@ -1,0 +1,54 @@
+@import "../../styles/mixins";
+
+.error {
+  @include info;
+  color: $red;
+}
+
+.info {
+  @include info;
+  color: $orange;
+}
+
+.list {
+  list-style: none;
+  line-height: 2;
+  border-bottom: 1px solid $light-gray;
+  padding: .5rem;
+}
+
+.pagination {
+  margin: .5rem 0;
+
+  @include large {
+    margin: 1rem 0;
+  }
+
+  &--regular,
+  &--active,
+  &_link {
+    padding: .5rem;
+    cursor: pointer;
+
+    @include large {
+      padding: .1rem .5rem;
+    }
+  }
+
+  &--active,
+  &_link {
+    font-weight: $bold;
+  }
+
+  &--regular {
+    display: none;
+    @include medium {
+      display: inline-flex;
+    }
+  }
+
+  &_link,
+  &--active {
+    display: inline-flex;
+  }
+}

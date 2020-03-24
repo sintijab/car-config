@@ -1,0 +1,32 @@
+@import "./mixins";
+
+* {
+  font-family: 'Swansea';
+  color: $dark-gray;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  margin: 0 auto;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+@font-face {
+ font-family: 'Swansea';
+ font-weight: 400;
+ font-style: normal;
+ src: url('./fonts/Swansea-q3pd.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'Helvetica';
+ font-weight: 400;
+ font-style: normal;
+ src: url('./fonts/HelveticaNowDisplayXBlk.otf') format('opentype');
+}

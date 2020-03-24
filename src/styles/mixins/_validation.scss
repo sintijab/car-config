@@ -1,0 +1,9 @@
+@import "./colors";
+@import "./fonts";
+
+@mixin info {
+  display: block;
+  padding: 1rem .2rem;
+  text-transform: uppercase;
+  font-size: $small;
+}

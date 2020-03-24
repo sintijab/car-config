@@ -1,0 +1,49 @@
+@import "../../styles/mixins";
+
+.board {
+
+  &_section {
+    align-self: auto;
+    margin: 0 .5rem 0 0;
+    width: 100%;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @include large {
+      width: 17rem;
+    }
+  }
+
+  &_select,
+  &_select--disabled {
+    width: 100%;
+    padding: 1rem .5rem;
+    margin: 0 0 .5rem 0;
+    border-radius: 1rem;
+    color: $semi-gray;
+    font-weight: $bold;
+    background: $white;
+    @include uppercare;
+
+    &_option {
+      @include uppercare;
+    }
+  }
+
+  &_select--disabled {
+    color: $light-gray;
+    border: 1px solid $light-gray;
+  }
+}
+
+.error {
+  @include info;
+  color: $red;
+}
+
+.info {
+  @include info;
+  color: $orange;
+}
