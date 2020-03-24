@@ -1,4 +1,4 @@
-#Selector of registered cars
+# Selector of registered cars
 - Single page application has responsive layout of car configurator with three main sections with models, versions and vehicles.
 - Each section can be reached by navigation.
 - Request failures corresponds the following error messages.
