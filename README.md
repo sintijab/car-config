@@ -9,7 +9,7 @@
 ## Getting Started
 
 ### Dependencies
-Application is built with Webpack configuration to have separate production and development bundles. Components are powered by React, hooks, axios for handling api calls, css-modules, sass preprocessor, react testing libraries. Unit tests are located in /tests directory. Source files are located in /src folder, http server has been modified to access and serve content from target /build directory. The service worker has two strategies set by priorities: cache-first access for succesfully stored api responses (1 day), scripts and styles(3 days) and fonts for available cache period.
+Application is built with Webpack and have separate production and development bundles. Components are powered by React, hooks, axios for handling api calls, css-modules, sass preprocessor, react testing libraries. Unit tests are located in /tests directory. Source files are located in /src folder, http server has been modified to access and serve content from target /build directory. The service worker has two strategies set by priorities: cache-first access for succesfully stored api responses (1 day), scripts and styles(3 days) and fonts for available cache period.
 
 ### Installing
 
